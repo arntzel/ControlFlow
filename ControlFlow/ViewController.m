@@ -17,13 +17,27 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    int x = 10;
+    int y = 20;
+    if (x > 20){
+        NSLog(@"x is greater than 20");
+    }
+    else if (y > 40){
+        NSLog(@"y is greater than 40");
+    }
+    else{
+        NSLog(@"the above statements are not true");
+    }
+    // || = either statement may be true to evaluate , && is both must be true to evaluate, == is this variable equal to that variable 
+    
+    //number of times to run through the loop
+    int z = 5;
+    for (int i = 0; i < z; i ++){
+        NSLog(@"loop number %i", i);
+    }
+    
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end
